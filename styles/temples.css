@@ -1,0 +1,156 @@
+﻿/* General Body and Typography */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background-color: #0c05bb; /* A deep purple */
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+    header h1 {
+        margin: 0;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+/* Hamburger Menu Button */
+.hamburger {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: block; /* Show hamburger in mobile view */
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    .hamburger:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+/* Navigation Styling (Mobile) */
+nav {
+    display: none; /* Hidden by default in mobile */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    background-color: #4a256b; /* Slightly darker purple for nav background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+    nav.show {
+        display: flex; /* Show when 'show' class is added by JS */
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        transition: background-color 0.3s ease;
+    }
+
+        nav a:last-child {
+            border-bottom: none;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background-color: #7a3eaf;
+        }
+
+main {
+    max-width: 90%;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+    main h2 {
+        text-align: center;
+        color: #0c05bb;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+    }
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+figure {
+    margin: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    figure:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+
+figcaption {
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #555;
+    background-color: #eee;
+    border-top: 1px solid #ddd;
+}
+
+footer {
+    background-color: #0c05bb;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+    footer p {
+        margin: 0.5rem 0;
+    }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}

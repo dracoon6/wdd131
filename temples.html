@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button class="hamburger" aria-label="Toggle navigation menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temple Gallery</h2>
+        <div class="gallery">
+            <figure>
+                <img src=images/Salt_Lake_Temple.jpg alt="Salt Lake Temple" loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src=images/Rome_Temple.jpg alt="Rome Italy Temple" loading="lazy">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Mesa-Temple.jpg" alt="Mesa Arizona Temple" loading="lazy">
+                <figcaption>Mesa Arizona Temple</figcaption>
+            </figure>
+            <figure>
+                <img src=images/Provo_City_Center_Temple.jpg alt="Provo City Center Temple" loading="lazy">
+                <figcaption>Provo City Center Temple</figcaption>
+            </figure>
+            <figure>
+                <img src=images/London_Temple.jpg alt="London England Temple" loading="lazy">
+                <figcaption>London England Temple</figcaption>
+            </figure>
+            <figure>
+                <img src=images/Tokyo-Japan-Temple.jpg alt="Tokyo Japan Temple" loading="lazy">
+                <figcaption>Tokyo Japan Temple</figcaption>
+            </figure>
+            <figure>
+                <img src=images/Manila_Philippines_Temple.jpeg alt="Manila Philippines Temple" loading="lazy">
+                <figcaption>Manila Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src=images/Kyiv_Ukraine_Temple.jpg alt="Kyiv Ukraine Temple" loading="lazy">
+                <figcaption>Kyiv Ukraine Temple</figcaption>
+            </figure>
+            <figure>
+                <img src=images/Hong_Kong_Temple.jpg alt="Hong Kong China Temple" loading="lazy">
+                <figcaption>Hong Kong China Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Daniel M. Koepke &#x2022; Tooele Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utah - The Beehive State</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Utah - The Beehive State</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/Utah_Landscape.jpg" type="image/webp">
+                <img src="images/Utah_Landscape.jpg" alt="Utah Landscape" loading="lazy">
+            </picture>
+        </section>
+
+        <div class="content-grid">
+            <section class="data-section">
+                <h2>Data</h2>
+                <div class="data-item">
+                    <span class="label">Capital:</span> <span class="value">Salt Lake City</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Population:</span> <span class="value">~3.4 Million</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">State Bird:</span> <span class="value">California Gull</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">State Flower:</span> <span class="value">Sego Lily</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Elevation (SLC):</span> <span class="value">4,226 ft (1,288 m)</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Nickname:</span> <span class="value">The Beehive State</span>
+                </div>
+            </section>
+
+            <section class="weather-section">
+                <h2>Weather <span class="weather-icon-large"></span></h2>
+                <div class="weather-item">
+                    <span class="label">Current Temp:</span> <span class="value">45°F</span>
+                </div>
+                <div class="weather-item">
+                    <span class="label">Wind Speed:</span> <span class="value">5 mph</span>
+                </div>
+                <div class="weather-item">
+                    <span class="label">Conditions:</span> <span class="value">Sunny</span>
+                </div>
+                <div class="weather-item">
+                    <span class="label">Wind Chill:</span> <span class="value" id="windChill">N/A</span>
+                </div>
+                <div class="weather-icon-mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48px" height="48px">
+                        <path d="M12 21.5c-3.31 0-6-2.69-6-6s2.69-6 6-6c.34 0 .68.03 1.01.09C13.17 6.45 15.38 5 18 5c3.31 0 6 2.69 6 6s-2.69 6-6 6h-1c-1.33 0-2.59-.53-3.54-1.46C12.53 19.91 12 20.69 12 21.5zM12 9.5c-2.21 0-4 1.79-4 4s1.79 4 4 4c.83 0 1.6-.26 2.24-.7C14.73 16.53 15.8 17 17 17c2.21 0 4-1.79 4-4s-1.79-4-4-4c-.83 0-1.6.26-2.24.7C13.27 10.47 12.2 10 11 10c-2.21 0-4 1.79-4 4s1.79 4 4 4c.83 0 1.6-.26 2.24-.7C14.73 16.53 15.8 17 17 17c2.21 0 4-1.79 4-4s-1.79-4-4-4c-.83 0-1.6.26-2.24.7C13.27 10.47 12.2 10 11 10z" />
+                    </svg>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Daniel M. Koepke &#x2022; Tooele Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
