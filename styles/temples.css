@@ -1,5 +1,4 @@
-﻿/* General Body and Typography */
-body {
+﻿body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     line-height: 1.6;
@@ -7,9 +6,8 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header Styling */
 header {
-    background-color: #0c05bb; /* A deep purple */
+    background-color: #0c05bb;
     color: #fff;
     padding: 1rem 2rem;
     display: flex;
@@ -24,14 +22,13 @@ header {
         font-weight: 700;
     }
 
-/* Hamburger Menu Button */
 .hamburger {
     background: none;
     border: none;
     color: #fff;
     font-size: 2rem;
     cursor: pointer;
-    display: block; /* Show hamburger in mobile view */
+    display: block;
     padding: 0.5rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -41,21 +38,20 @@ header {
         background-color: rgba(255, 255, 255, 0.1);
     }
 
-/* Navigation Styling (Mobile) */
 nav {
-    display: none; /* Hidden by default in mobile */
+    display: none;
     flex-direction: column;
     width: 100%;
     position: absolute;
-    top: 60px; /* Adjust based on header height */
+    top: 60px;
     left: 0;
-    background-color: #4a256b; /* Slightly darker purple for nav background */
+    background-color: #4a256b;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
 
     nav.show {
-        display: flex; /* Show when 'show' class is added by JS */
+        display: flex;
     }
 
     nav a {
