@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draconia Atiesh - Roster & Raids</title>
+    <!-- Google Fonts for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Draconia Atiesh</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="roster.html">Roster & Raids</a></li>
+                <li><a href="join.html">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="roster-section">
+            <h2>Guild Roster</h2>
+            <div id="roster-list">
+                <!-- Roster items will be dynamically added here by JavaScript -->
+                <p>Loading roster...</p>
+            </div>
+        </section>
+
+        <section class="raids-signup-section">
+            <h2>Raid Sign-ups</h2>
+            <p>Select a raid below to sign up.</p>
+            <div class="raid-signup-list">
+                <div class="raid-item">
+                    <h3>Mogu'shan Vaults</h3>
+                    <p><strong>Date:</strong> Friday, 8:00 PM ST</p>
+                    <p><strong>Status:</strong> Needs DPS</p>
+                    <button class="signup-btn" data-raid="Mogu'shan Vaults">Sign Up</button>
+                </div>
+                <div class="raid-item">
+                    <h3>Heart of Fear</h3>
+                    <p><strong>Date:</strong> Saturday, 8:00 PM ST</p>
+                    <p><strong>Status:</strong> Ready to go!</p>
+                    <button class="signup-btn" data-raid="Heart of Fear">Sign Up</button>
+                </div>
+                <div class="raid-item">
+                    <h3>Terrace of Endless Spring</h3>
+                    <p><strong>Date:</strong> Sunday, 8:00 PM ST</p>
+                    <p><strong>Status:</strong> Needs Healers</p>
+                    <button class="signup-btn" data-raid="Terrace of Endless Spring">Sign Up</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Draconia Atiesh</p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+
+    <script src="roster.js"></script>
+</body>
+</html>

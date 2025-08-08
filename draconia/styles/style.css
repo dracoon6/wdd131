@@ -1,0 +1,259 @@
+﻿/* Define color variables for consistency */
+:root {
+    --blood-red: #880808;
+    --dark-blue: #00224b;
+    --gold: #bb8010;
+    --light-text: #f0f0f0;
+    --secondary-bg: #002e63;
+}
+
+/* Basic styling for the entire page */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-blue);
+    color: var(--light-text);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--secondary-bg);
+    border-bottom: 3px solid var(--blood-red);
+    flex-wrap: wrap; /* For mobile responsiveness */
+}
+
+.logo h1 {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+    font-size: 1.8rem;
+    margin: 0;
+    flex-grow: 1; /* Allows the logo to take up space on smaller screens */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--light-text);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+    nav a:hover {
+        color: var(--gold);
+    }
+
+/* Hero section with the guild crest */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--dark-blue);
+    border-bottom: 1px solid var(--gold);
+}
+
+    .hero img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+/* Main content sections */
+.content-section {
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.guild-info, .raid-info {
+    background-color: var(--secondary-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--gold);
+    flex: 1 1 45%; /* Flexbox for responsive columns */
+}
+
+    .guild-info h2, .raid-info h2 {
+        font-family: 'Playfair Display', serif;
+        color: var(--blood-red);
+        border-bottom: 2px solid var(--gold);
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+/* Call-to-action button */
+.cta-button, .signup-btn, .submit-btn {
+    display: inline-block;
+    background-color: var(--blood-red);
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+    .cta-button:hover, .signup-btn:hover, .submit-btn:hover {
+        background-color: #a30b0b;
+    }
+
+/* Raid list styling on home page */
+.raid-list li {
+    background-color: var(--dark-blue);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 3px solid var(--blood-red);
+    border-radius: 4px;
+}
+
+/* New styles for roster.html */
+.roster-section, .raids-signup-section, .join-form-section {
+    background-color: var(--secondary-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--gold);
+    margin-bottom: 40px;
+}
+
+    .roster-section h2, .raids-signup-section h2, .join-form-section h2 {
+        font-family: 'Playfair Display', serif;
+        color: var(--blood-red);
+        border-bottom: 2px solid var(--gold);
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+#roster-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.roster-member {
+    background-color: var(--dark-blue);
+    padding: 15px;
+    border-left: 3px solid var(--blood-red);
+    border-radius: 4px;
+}
+
+    .roster-member h3 {
+        color: var(--gold);
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+
+.raid-item {
+    background-color: var(--dark-blue);
+    padding: 15px;
+    border-left: 3px solid var(--blood-red);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+    .raid-item h3 {
+        margin-top: 0;
+        color: var(--light-text);
+        font-size: 1.4rem;
+    }
+
+/* New form styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gold);
+    background-color: var(--dark-blue);
+    color: var(--light-text);
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Style for the form status message */
+#form-status {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.success {
+    background-color: #0d4e0d;
+    color: var(--light-text);
+}
+
+.error {
+    background-color: #5c0b0b;
+    color: var(--light-text);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-bg);
+    border-top: 3px solid var(--blood-red);
+    margin-top: 40px;
+}
+
+    footer a {
+        color: var(--gold);
+        text-decoration: none;
+    }
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .content-section {
+        flex-direction: column;
+    }
+}
