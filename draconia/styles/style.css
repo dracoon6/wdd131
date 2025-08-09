@@ -1,5 +1,4 @@
-﻿/* Define color variables for consistency */
-:root {
+﻿:root {
     --blood-red: #880808;
     --dark-blue: #00224b;
     --gold: #bb8010;
@@ -7,13 +6,18 @@
     --secondary-bg: #002e63;
 }
 
-/* Basic styling for the entire page */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--dark-blue);
     color: var(--light-text);
     margin: 0;
     line-height: 1.6;
+    background-image: url('../images/1024px-AllianceLogo.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    opacity: .93;
 }
 
 .container {
@@ -22,15 +26,14 @@ body {
     padding: 20px;
 }
 
-/* Header and Navigation */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
     background-color: var(--secondary-bg);
-    border-bottom: 3px solid var(--blood-red);
-    flex-wrap: wrap; /* For mobile responsiveness */
+    border-bottom: 3px solid var(--gold);
+    flex-wrap: wrap;
 }
 
 .logo h1 {
@@ -38,7 +41,7 @@ header {
     color: var(--gold);
     font-size: 1.8rem;
     margin: 0;
-    flex-grow: 1; /* Allows the logo to take up space on smaller screens */
+    flex-grow: 1;
 }
 
 nav ul {
@@ -62,12 +65,11 @@ nav a {
         color: var(--gold);
     }
 
-/* Hero section with the guild crest */
 .hero {
     text-align: center;
     padding: 50px 20px;
     background-color: var(--dark-blue);
-    border-bottom: 1px solid var(--gold);
+    border-bottom: 1px solid var(--blood-red);
 }
 
     .hero img {
@@ -77,7 +79,6 @@ nav a {
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     }
 
-/* Main content sections */
 .content-section {
     padding: 40px 0;
     display: flex;
@@ -89,19 +90,18 @@ nav a {
     background-color: var(--secondary-bg);
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid var(--gold);
-    flex: 1 1 45%; /* Flexbox for responsive columns */
+    border: 1px solid var(--blood-red);
+    flex: 1 1 45%;
 }
 
     .guild-info h2, .raid-info h2 {
         font-family: 'Playfair Display', serif;
-        color: var(--blood-red);
-        border-bottom: 2px solid var(--gold);
+        color: var(--gold);
+        border-bottom: 2px solid var(--blood-red);
         padding-bottom: 10px;
         margin-bottom: 20px;
     }
 
-/* Call-to-action button */
 .cta-button, .signup-btn, .submit-btn {
     display: inline-block;
     background-color: var(--blood-red);
@@ -120,28 +120,26 @@ nav a {
         background-color: #a30b0b;
     }
 
-/* Raid list styling on home page */
 .raid-list li {
     background-color: var(--dark-blue);
     padding: 10px;
     margin-bottom: 10px;
-    border-left: 3px solid var(--blood-red);
+    border-left: 3px solid var(--gold);
     border-radius: 4px;
 }
 
-/* New styles for roster.html */
 .roster-section, .raids-signup-section, .join-form-section {
     background-color: var(--secondary-bg);
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid var(--gold);
+    border: 1px solid var(--blood-red);
     margin-bottom: 40px;
 }
 
     .roster-section h2, .raids-signup-section h2, .join-form-section h2 {
         font-family: 'Playfair Display', serif;
-        color: var(--blood-red);
-        border-bottom: 2px solid var(--gold);
+        color: var(--gold);
+        border-bottom: 2px solid var(--blood-red);
         padding-bottom: 10px;
         margin-bottom: 20px;
     }
@@ -155,7 +153,7 @@ nav a {
 .roster-member {
     background-color: var(--dark-blue);
     padding: 15px;
-    border-left: 3px solid var(--blood-red);
+    border-left: 3px solid var(--gold);
     border-radius: 4px;
 }
 
@@ -168,7 +166,7 @@ nav a {
 .raid-item {
     background-color: var(--dark-blue);
     padding: 15px;
-    border-left: 3px solid var(--blood-red);
+    border-left: 3px solid var(--gold);
     border-radius: 4px;
     margin-bottom: 15px;
 }
@@ -179,7 +177,6 @@ nav a {
         font-size: 1.4rem;
     }
 
-/* New form styles */
 .form-group {
     margin-bottom: 15px;
 }
@@ -196,14 +193,13 @@ select,
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid var(--gold);
+    border: 1px solid var(--blood-red);
     background-color: var(--dark-blue);
     color: var(--light-text);
     border-radius: 5px;
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    box-sizing: border-box;
 }
 
-/* Style for the form status message */
 #form-status {
     padding: 10px;
     border-radius: 5px;
@@ -225,12 +221,11 @@ textarea {
     display: none;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background-color: var(--secondary-bg);
-    border-top: 3px solid var(--blood-red);
+    border-top: 3px solid var(--gold);
     margin-top: 40px;
 }
 
@@ -239,7 +234,6 @@ footer {
         text-decoration: none;
     }
 
-/* Responsive design for mobile screens */
 @media (max-width: 768px) {
     header {
         flex-direction: column;

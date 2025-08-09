@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Draconia Atiesh - Guild Home</title>
-    <!-- Google Fonts for typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Link to the external stylesheet -->
+    <script src="scripts/getdates.js" defer></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-
     <header>
         <div class="logo">
             <h1>Draconia Atiesh</h1>
@@ -26,12 +23,10 @@
             </ul>
         </nav>
     </header>
-
     <main class="container">
         <section class="hero">
-            <img src="images/Gild_Crest.jfif" alt="Draconia Atiesh Guild Crest">
+            <img src="images/Gild_Crest.jpg" alt="Draconia Atiesh Guild Crest" loading="lazy">
         </section>
-
         <section class="content-section">
             <article class="guild-info">
                 <h2>Our Guild</h2>
@@ -54,11 +49,10 @@
             </aside>
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2025 Draconia Atiesh</p>
+        <p>&copy;<span id="currentyear"></span> Daniel M. Koepke &#x2022;</p>
+        <p id="lastModified"></p>
         <p><a href="references.html">References</a></p>
     </footer>
-
 </body>
 </html>
