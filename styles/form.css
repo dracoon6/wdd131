@@ -1,5 +1,4 @@
-﻿/* Add form-specific styles */
-main {
+﻿main {
     max-width: 960px;
     margin: 2rem auto;
     padding: 1rem;
@@ -72,10 +71,9 @@ select {
         cursor: pointer;
         color: #ddd;
         transition: color 0.2s ease;
-        padding: 0; /* Remove padding from radio labels */
+        padding: 0;
     }
 
-    /* Star styling */
     .rating-group input[type="radio"]:checked ~ label {
         color: #F2A900;
     }

@@ -29,7 +29,6 @@
 function populateProductSelect() {
     const selectElement = document.getElementById('product-name');
 
-    // Create the default, disabled option
     const defaultOption = document.createElement('option');
     defaultOption.textContent = "Select a Product ...";
     defaultOption.value = "";
@@ -37,7 +36,6 @@ function populateProductSelect() {
     defaultOption.selected = true;
     selectElement.appendChild(defaultOption);
 
-    // Populate with product data
     products.forEach(product => {
         const option = document.createElement('option');
         option.value = product.id;
@@ -46,5 +44,4 @@ function populateProductSelect() {
     });
 }
 
-// Call the function when the page loads
 document.addEventListener('DOMContentLoaded', populateProductSelect);
